@@ -57,4 +57,4 @@ document.querySelectorAll('.will-reveal').forEach(function(t) { t.classList.add(
 }
 
 //big texts
-document.getElementById('mini-intro').textContent='Hi, I'm a human being. I am a programmer, I write code sometimes. I am also a college fresher. I wake up everyday, rush to college, sleep in class, get attendance, and work on my own project back in my room. I'm working on a big project of my own right now. And hi to this basic website of mine, here I'm going to post things about myself.';
+document.getElementById('mini-intro').textContent = `Hi, I'm a human being. I am a programmer, I write code sometimes. I am also a college fresher. I wake up everyday, rush to college, sleep in class, get attendance, and work on my own project back in my room. I'm working on a big project of my own right now. And hi to this basic website of mine, here I'm going to post things about myself.`;
