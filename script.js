@@ -15,7 +15,7 @@ try { localStorage.setItem('mm_theme', theme); } catch(e) {}
 
 //Attach click listeners once
 document.querySelectorAll('.switcher__btn').forEach(function(btn){
-    btn.addEventListern('click',function(){
+    btn.addEventListener('click',function(){
         setTheme(btn.getAttribute('data-theme-target'));
     });
 });
