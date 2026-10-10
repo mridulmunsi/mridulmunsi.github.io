@@ -13,7 +13,15 @@ document.querySelector('.blog-only').style.display = theme === 'blog' ? '' : 'no
 try { localStorage.setItem('mm_theme', theme); } catch(e) {}
 }
 
+//Attach click listeners once
+document.querySelectorAll('.switcher__btn').forEach(function(btn){
+    btn.addEventListern('click',function(){
+        setTheme(btn.getAttribute('data-theme-target'));
+    });
+});
+
 // Load saved theme
+var saved = null;
 try {
 var saved = localStorage.getItem('mm_theme');
 if (saved && ['terminal','retro','blog'].includes(saved)) setTheme(saved);
